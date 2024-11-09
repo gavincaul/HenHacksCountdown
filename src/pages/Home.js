@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="black-background">
       <div className="countdown-container" >
-        <img src="/sources/timerbackground.png" alt="Countdown" className="countdown-image" />
+        <img src="/timerbackground.png" alt="Countdown" className="countdown-image" />
           <a href="https://www.henhackshackathon.com/" style={{ textDecoration: 'none'}}>
           <div className="countdown-overlay" >
             <Countdown targetDate={td} />
