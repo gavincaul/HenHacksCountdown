@@ -1,68 +1,51 @@
 import React, { useState, useEffect } from 'react';
-import './countdown.css'
-
+import './countdown.css';
 
 export function Countdown({ targetDate }) {
-  const [timeLeft, setTimeLeft] = useState(CalculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState(CalculateTimeLeft(targetDate));
 
-  function CalculateTimeLeft(td){
-    let difference = Date.parse(td) - Date.now()
-    let time
-    if (difference > 0){
-      difference /= 1000; //milliseconds to seconds
+  function CalculateTimeLeft(td) {
+    const difference = new Date(td) - new Date();
+    if (difference <= 0) return { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
-      let days = Math.floor(difference / 86400);   difference -= days * 86400; 
-      let hours = Math.floor(difference / 3600);   difference -= hours * 3600; 
-      let minutes = Math.floor(difference / 60);   difference -= minutes * 60; 
-      let seconds = Math.floor(difference);
+    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((difference / 1000 / 60) % 60);
+    const seconds = Math.floor((difference / 1000) % 60);
 
-      time = {
-        days: days,
-        hours: hours,
-        minutes: minutes,
-        seconds: seconds
-      };
-
-    }
-    else{
-      time = {
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0
-      }
-    }
-
-    return time;
+    return { days, hours, minutes, seconds };
   }
-  
+
   useEffect(() => {
     const timer = setInterval(() => {
       setTimeLeft(CalculateTimeLeft(targetDate));
     }, 1000);
-
     return () => clearInterval(timer);
   }, [targetDate]);
 
-
+  var timeUnits = {
+    days: 365,
+    hours: 24,
+    minutes: 60,
+    seconds: 60
+  }
   return (
     <div className="countdown">
-      <div className="countdown-item">
-        <span>{timeLeft.days}</span>
-        <p>Days</p>
-      </div>
-      <div className="countdown-item">
-        <span>{timeLeft.hours}</span>
-        <p>Hours</p>
-      </div>
-      <div className="countdown-item">
-        <span>{timeLeft.minutes}</span>
-        <p>Minutes</p>
-      </div>
-      <div className="countdown-item">
-        <span>{timeLeft.seconds}</span>
-        <p>Seconds</p>
-      </div>
+      {Object.entries(timeLeft).map(([unit, value]) => {
+        const element = document.querySelector(`.${unit} .number`);
+        const degree = 360 / timeUnits[unit] * (timeUnits[unit] - timeLeft[unit]);
+        if (element) {
+          element.style.setProperty("--degree", `${degree}deg`)
+        }
+  
+        return (
+          <div key={unit} className={`part ${unit}`}>
+            <div className="number">{value}</div>
+            <div className="text">{unit}</div>
+          </div>
+        );
+      })}
     </div>
   );
+  
 }
