@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="black-background">
       <div> 
-        <Snowflake></Snowflake>
+        <Snowflake snowflakeNum={8}></Snowflake>
       </div>
       <div className="countdown-container">
         <img src="/timerbackground.png" alt="Countdown" className="countdown-image" />
