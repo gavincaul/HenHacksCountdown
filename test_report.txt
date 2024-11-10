@@ -96,7 +96,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.js
-  ✕ renders learn react link (96 ms)
+  ✕ renders learn react link (104 ms)
 
   ● renders learn react link
 
@@ -108,6 +108,98 @@ FAIL src/App.test.js
         [36m<div[39m
           [33mclass[39m=[32m"black-background"[39m
         [36m>[39m
+          [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/chickensnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/pigsnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/chickensnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/pigsnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/chickensnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/pigsnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/chickensnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/pigsnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/chickensnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"snowflake"[39m
+            [36m>[39m
+              [36m<img[39m
+                [33malt[39m=[32m"snowflakeElement"[39m
+                [33msrc[39m=[32m"/pigsnowflake.png"[39m
+                [33mstyle[39m=[32m"width: 35px;"[39m
+              [36m/>[39m
+            [36m</div>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mclass[39m=[32m"countdown-container"[39m
           [36m>[39m
@@ -146,7 +238,7 @@ FAIL src/App.test.js
                     [36m<div[39m
                       [33mclass[39m=[32m"number"[39m
                     [36m>[39m
-                      [0m10[0m
+                      [0m4[0m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"text"[39m
@@ -160,7 +252,7 @@ FAIL src/App.test.js
                     [36m<div[39m
                       [33mclass[39m=[32m"number"[39m
                     [36m>[39m
-                      [0m8[0m
+                      [0m16[0m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"text"[39m
@@ -174,7 +266,7 @@ FAIL src/App.test.js
                     [36m<div[39m
                       [33mclass[39m=[32m"number"[39m
                     [36m>[39m
-                      [0m51[0m
+                      [0m34[0m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"text"[39m
@@ -224,7 +316,7 @@ All files            |      60 |       25 |      70 |    60.6 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.67 s
+Time:        2.893 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
