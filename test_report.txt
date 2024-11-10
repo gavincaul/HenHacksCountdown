@@ -266,7 +266,7 @@ FAIL src/App.test.js
                     [36m<div[39m
                       [33mclass[39m=[32m"number"[39m
                     [36m>[39m
-                      [0m34[0m
+                      [0m9[0m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"text"[39m
@@ -316,7 +316,7 @@ All files            |      60 |       25 |      70 |    60.6 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.893 s
+Time:        2.704 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
