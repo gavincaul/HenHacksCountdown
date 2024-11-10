@@ -96,7 +96,7 @@
       at runCLI (node_modules/@jest/core/build/cli/index.js:173:3)
 
 FAIL src/App.test.js
-  ✕ renders learn react link (100 ms)
+  ✕ renders learn react link (107 ms)
 
   ● renders learn react link
 
@@ -250,7 +250,7 @@ FAIL src/App.test.js
                     [36m<div[39m
                       [33mclass[39m=[32m"number"[39m
                     [36m>[39m
-                      [0m55[0m
+                      [0m52[0m
                     [36m</div>[39m
                     [36m<div[39m
                       [33mclass[39m=[32m"text"[39m
@@ -301,7 +301,7 @@ All files            |   66.66 |       25 |      75 |   66.66 |
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.752 s
+Time:        2.703 s
 Ran all test suites.
 [0;33mOne of your dependencies, babel-preset-react-app, is importing the
 "@babel/plugin-proposal-private-property-in-object" package without
