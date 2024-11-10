@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import "./Snowflake.css";
+import {Snowflake} from "../components/snowflakes.js";
 import { Countdown } from "../components/countdown.js";
 
 
@@ -10,16 +10,7 @@ export default function Home() {
   return (
     <div className="black-background">
       <div> 
-        <div className="snowflake"><img src="/chickensnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/pigsnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/chickensnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/pigsnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/chickensnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/pigsnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/chickensnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/pigsnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/chickensnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
-        <div className="snowflake"><img src="/pigsnowflake.png" alt="snowflakeElement" style={{width:'35px'}} /></div>
+        <Snowflake></Snowflake>
       </div>
       <div className="countdown-container">
         <img src="/timerbackground.png" alt="Countdown" className="countdown-image" />

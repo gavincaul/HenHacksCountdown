@@ -29,6 +29,14 @@
     top:30%;
     right:1.5%;
   }
+  @media (max-width: 767px) {
+    .countdown-container {
+      width: 90%; 
+      padding: 10px; 
+      transform: scale(0.8)
+    }
+  }
+
   
   
 
