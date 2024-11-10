@@ -2,7 +2,7 @@ import React from "react";
 import "./Snowflake.css";
 
 export function Snowflake({ snowflakeNum }) {
-  const img_arr = ["public/pigsnowflake.png", "public/chickensnowflake.png"];
+  const img_arr = ["/pigsnowflake.png", "/chickensnowflake.png"];
   const snowflake_arr = [];
 
   for (let i = 0; i < snowflakeNum; i++) {
